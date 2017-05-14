@@ -1,0 +1,23 @@
+#include <stdlib.h>
+#include <stdio.h>
+int main()
+{
+	printf("obrabotka massiva");
+	printf("\n indeks          element massiva\n ");
+	int array1[20];
+	int S, k=10;
+	for( int i=0; i<20; i++)
+	{
+		array1[i]=rand();
+		printf("\n array1[%d]         %d\n", i, array1[i]);
+	}
+	for(int i=0;i<10;i++)
+	{
+      S=array1[i]+array1[i+1]+array1[i+2]+array1[i+3]+array1[i+4]+array1[i+5]+array1[i+6]+array1[i+7]+array1[i+8]+array1[i+9];
+	  int P1=S/k;
+	  int P2=S%k;
+	  printf("         summa: %d     srednee znachenie: %d,%d \n", S, P1, P2);
+	}
+	system("pause");
+	return 0;
+}

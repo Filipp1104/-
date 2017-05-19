@@ -3,25 +3,25 @@
 
 #define N 20//задаем размер массива
 
-int main()
-{
+  int main()
+   {
 	printf("obrabotka massiva");//показать заголовок процесса
 	printf("\n indeks          element massiva\n ");//показать заголвки таблицы
 	int array1[N];//обозначаем массив
 	int S;//обозначаем сумму элементов
-	for( int i=0; i<N; i++)
-	{
+	  for( int i=0; i<N; i++)
+	    {
 		array1[i]=rand();//случайное присваивание значений элементрам массива
 		printf("\n array1[%d]         %d\n", i, array1[i]);//показать элемент массива и его значение
-	}
+	     }
 #define K 10//задаем размер буфера
-	for(int i=0;i<K;i++)
-	{
-    S=array1[i]+array1[i+1]+array1[i+2]+array1[i+3]+array1[i+4]+array1[i+5]+array1[i+6]+array1[i+7]+array1[i+8]+array1[i+9];//формула суммы 10-ти элементов
-	  int P1=S/K;//формула целой части среднего значения 
-	  int P2=S%K;//формула десятичной части среднего значения
-	  printf("         summa: %d     srednee znachenie: %d,%d \n", S, P1, P2);//показать средние значения 
-	}
+	  for(int i=0;i<K;i++)
+	    {
+                S=array1[i]+array1[i+1]+array1[i+2]+array1[i+3]+array1[i+4]+array1[i+5]+array1[i+6]+array1[i+7]+array1[i+8]+array1[i+9];//формула суммы 10-ти элементов
+	        int P1=S/K;//формула целой части среднего значения 
+	        int P2=S%K;//формула десятичной части среднего значения
+	        printf("         summa: %d     srednee znachenie: %d,%d \n", S, P1, P2);//показать средние значения 
+	     }
 	system("pause");
 	return 0;
-}
+     }
